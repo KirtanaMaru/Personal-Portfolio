@@ -65,7 +65,7 @@ const Projects = () => {
           <span className='project-caption'>Personal Portfolio</span>
           <div className='project-info' >
             <p>Developed responsive and interactive personal portfolio using React.js to showcase my skills and projects with a user-friendly interface.</p>
-            <a href="https://github.com/KirtanaMaru" style={{textDecoration:'none'}}><button className='project-more'>More</button></a>
+            <a href="https://github.com/KirtanaMaru/Personal-Portfolio" style={{textDecoration:'none'}}><button className='project-more'>More</button></a>
           </div>
         </div>
         
