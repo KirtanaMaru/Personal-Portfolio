@@ -1,0 +1,89 @@
+.contact-section{
+padding:50px 0px;
+
+}
+.contact-card{
+
+display: flex;
+border: 1px solid black ;
+border-radius: 15px;
+background-color: black;
+width:70%;
+height:600px;
+align-items: center;
+margin:50px auto;
+justify-content: space-between;
+}
+
+.contact-img{
+    width:50%;
+    height: 650px;
+}
+
+.contact-inner-card{
+    border: 1px solid rgba(29, 29, 29, 0.992);
+    background-color: rgba(29, 29, 29, 0.992);
+    width: 50%;
+    height: 80%;
+    margin-right: 50px;
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+.contact-heading{
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=text],textarea{
+    width: 100%;
+    padding: 19px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color:black;
+    font-size: 18px;
+}
+
+textarea{
+    height:80px;
+}
+input[type=submit]{
+    border:0px solid black;
+    display: flex;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding:10px 50px ;
+    background: linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+    font-size: 19px;
+    margin: 5px auto;
+}
+
+@media screen and (max-width:900px) {
+   .contact-img{
+    display: none;
+   }
+   .contact-inner-card{
+    width:80%;
+    margin: 0 auto;
+}
+    
+}
+@media screen and (max-width: 760px){
+    .contact-img{
+        display: none;
+    }
+    .contact-inner-card{
+        width:100%;
+        margin: 0 auto;
+        background-color: black;
+        border:1px solid black;
+    }
+    .contact-card{
+        width:90%;
+        height:100%;
+        border: 1px solid rgba(29, 29, 29, 0.992);
+    }
+}

@@ -1,0 +1,201 @@
+.e-section{
+   margin: 40px auto;
+   
+    width: 100%;
+}
+.e-container {
+    border:1px soild white;
+    border-radius: 20px;
+    background-color: rgba(29, 29, 29, 0.992);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin:0 auto;
+    width:90%;
+    padding:40px 0px;
+  }
+  
+.e-container::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-top:40px;
+    margin-bottom: 40px;
+    
+  }
+.e-heading{
+display: flex;
+    font-size: 30px;
+    margin-bottom: 50px;
+   
+    padding-bottom: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.e-card .circle::after{
+    content:'';
+    position: absolute;
+    background : linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 10;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.e-card .circle1::after{
+    content:'';
+    position: absolute;
+    background : linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 10;
+    left: 50%;
+    margin-left: -8px;
+}
+
+
+
+
+
+
+.e-card .e-date{
+    background:linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+    padding: 5px;
+    border-radius: 20px;
+    color:white;
+    font-size: 17px;
+    
+}
+
+.e-card {
+    margin-bottom: 40px;
+    
+    
+   
+}
+.e-card:nth-child(odd){
+   padding-left: 580px;
+   padding-right: 40px;
+}
+.e-card:nth-child(even){
+    padding-left:40px;
+   text-align: right;
+   padding-right: 550px;
+}
+.e-box{
+    border:1px solid white;
+    border-radius: 10px;
+    padding:20px;
+    margin: 20px 0px;
+    z-index: 100;
+    background-color: black;
+
+}
+
+.e-box p:first-child
+{
+    font-size: 20px;
+}
+.e-box :not(p:first-child)
+{
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+}
+.e-box:hover{
+    background:linear-gradient(to bottom , rgb(106,6,236),rgb(220,0,240));
+}
+
+
+
+@media screen and (max-width: 1260px) {
+    
+    .e-container::after ,.e-card .circle1::after , .e-card .circle::after{
+        left:10%;
+    }
+    .e-box{width:100%}
+    .e-card:nth-child(odd){
+        padding:0px 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+    .e-box3 {
+        padding-right: 80px;
+    }
+   
+     .e-card:nth-child(even){
+        text-align: left;
+        padding:0px 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+     }
+     .e-card:nth-child(even) .e-box{
+        padding-right: 60px;
+     }
+  }
+
+  @media screen and (max-width: 762px) {
+    
+    .e-container::after ,.e-card .circle1::after , .e-card .circle::after{
+        left:10%;
+    }
+    .e-box{width:100%}
+    .e-card:nth-child(odd){
+        padding:0px 0px;
+        margin-left: 130px;
+        margin-right: 10%;
+     }
+     .e-box3{
+        padding-right: 60px;
+     }
+    
+    
+     .e-card:nth-child(even){
+        text-align: left;
+        padding:0px 0px;
+        margin-left: 130px;
+        margin-right: 10%;
+        padding-right: 20px;
+     }
+     .e-card:nth-child(even) .e-box{
+        padding-right: 10px;
+     }
+
+  }
+
+  
+  @media screen and (max-width: 600px) {
+
+    .e-container::after ,.e-card .circle1::after , .e-card .circle::after{
+        left:10%;
+    }
+    .e-box{width:100%}
+    .e-card:nth-child(odd){
+        padding:0px 0px;
+        margin-left: 90px;
+        margin-right: 10%;
+     }
+     .e-box3{
+        padding-right: 0px;
+     }
+    
+    
+     .e-card:nth-child(even){
+        text-align: left;
+        padding:0px 0px;
+        margin-left: 90px;
+        margin-right: 10%;
+        padding-right: 0px;
+     }
+     .e-card:nth-child(even) .e-box{
+        padding-right: 10px;
+     }
+
+  }

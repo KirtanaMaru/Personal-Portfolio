@@ -1,0 +1,139 @@
+.sidebar{
+    font-family: 'Carter One', cursive;
+    background-color: black;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    width:70px;
+    height:100%;
+    padding:20px;
+    border-right: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px;
+    z-index:1000;
+    justify-content: space-between;  
+}
+.sidetitle{
+    font-size: 25px;
+}
+.navbar,.side-footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.navbar .navbar-icon , .side-footer i{
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    position: relative;
+    margin-bottom: 3px;
+    
+}
+.navbar .navbar-icon::after{
+    content:'';
+    position: absolute;
+    background: #F9226D;
+    height:4px;
+    width:0;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+  
+  }
+.navbar .navbar-icon:hover:after{
+    width:100%;
+    
+  }
+ 
+.navbar .navbar-icon span{
+    display: none;
+}
+.fa-solid .fa-heart{
+    background-color: red;
+    color:red;
+}
+.fa-regular .fa-heart{
+    color:'white';
+}
+
+.like-section{
+    display: flex;
+    flex-direction: column;
+
+}
+.copyright{
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    transform:rotate(-180deg);
+    cursor: pointer;
+}
+.icon-menu{
+    display: none;
+    
+}
+@media only screen and (max-width: 962px){
+    .sidebar{
+        flex-direction: row;
+        width:100%;
+        height:70px;
+        padding:auto 40px;
+        align-items: center;
+    }
+    .navbar{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+    .mobile-navbar{
+        display:flex;
+        flex-direction: column;
+        margin-top: 420px;
+        position: absolute;
+        right:0;
+        border:1px solid rgba(29, 29, 29, 0.992);;
+        background-color: rgba(29, 29, 29, 0.992);;
+        border-left-color: rgb(106,6,236);
+  border-right-color: rgb(106,6,236);
+  border-top-color: rgb(220,0,240);
+  border-bottom-color: rgb(220,0,240);
+        border-radius: 10px;
+        padding: 5px 10px;
+        row-gap:24px;
+    }
+    .mobile-navbar .navbar-icon{
+        padding: 10px;
+    }
+    .mobile-navbar .navbar-icon span{
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 19px;
+        font-family: 'Carter One', cursive;
+        cursor: pointer;
+    }
+   
+    .mobile-navbar .navbar-icon:hover{
+        background-color:black;
+        width:100%;
+        border-radius: 5px;
+    }
+    .side-footer{
+        flex-direction: row;
+        justify-content: space-between;
+        gap:30px;
+        
+    }
+    .like-section{
+        display: flex;
+        flex-direction: row;
+    }
+    .icon-menu{
+        display: flex;
+        
+    }
+
+}
+
+
+

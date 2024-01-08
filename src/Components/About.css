@@ -1,0 +1,143 @@
+.about-section{
+  background: rgba(29, 29, 29, 0.992);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 40px 10px;
+    width:100%;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+      padding: 80px 30px; /* Adjust the padding further if needed for smaller screens */
+  }
+}
+.about-head{
+    font-size: 36px;
+    margin-bottom: 50px;
+    position: relative;
+    
+    
+}
+
+
+.img-bg {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 220px;
+  border-radius: 100%;
+  align-items: center;
+  background: linear-gradient(#0cf,#ec45f2,#0cf,#ec45f2);;
+  position: relative; /* Added position relative */
+  
+  
+}
+
+.about-img-container {
+  position: absolute; /* Added position absolute */
+  height: 200px;
+  width: 200px;
+  z-index: 10;
+ 
+}
+
+.about-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%; /* Added border-radius */
+  z-index: 10;
+}
+
+.img-bg span {
+  /* Adjusted styles for the gradient shadows */
+  position: absolute;
+  height: 100%;
+  width:100%;
+  border-radius: 50%;
+  background: linear-gradient(#0cf,#ec45f2,#0cf,#ec45f2);
+  animation: imgani 10s linear infinite;
+}
+
+.img-bg span:nth-child(1) {
+  filter: blur(5px);
+}
+
+.img-bg span:nth-child(2) {
+  filter: blur(10px);
+}
+
+.img-bg span:nth-child(3) {
+  filter: blur(25px);
+}
+
+.img-bg span:nth-child(4) {
+  filter: blur(150px);
+}
+
+@keyframes imgani {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-content{
+    margin-top: 60px;
+    display: block;
+    text-align: center;
+   
+}
+.about-text{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.about-text span{
+  padding-left: 10px;
+}
+
+.about-content p{
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  max-width: 1200px;
+  font-size:17px;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.Dcv{
+ font-size: 20px;
+ padding: 8px;
+ border-radius: 10px;
+ position: relative;
+ background-color: black;
+ z-index: 100;
+}
+
+.Dcv::before{
+  content:'';
+  width:100%;
+  height:100%;
+  background:radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%,rgba(2,245,255,1) 100.2%);
+  filter:blur(15px);
+  position: absolute;
+  left:0;
+  top:0;
+  z-index:-1;
+}
+.Dcv:hover{
+  transform: scale(0.9);
+  transition: 0.5s;
+  background:radial-gradient(circle farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%,rgba(2,245,255,1) 100.2%);
+}
+
