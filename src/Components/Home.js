@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css';
-import girl from '../img/kirtana.jpeg';
+import girl from '../img/kirtana_avatar.png';
 import { Link} from 'react-scroll';
 import {motion} from 'framer-motion';
 
